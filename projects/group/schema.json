@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/csc3213-2026-group-b/public-json-schemas/main/projects/group/schema.json",
+  "title": "Project Metadata",
+  "type": "object",
+  "required": [
+    "course",
+    "group",
+    "title",
+    "repository_name",
+    "team",
+    "supervisors",
+    "tags"
+  ],
+  "properties": {
+    "course": {
+      "type": "string",
+      "description": "Course code (e.g., CSCXXXX)"
+    },
+    "group": {
+      "type": "string",
+      "description": "Project group identifier"
+    },
+    "title": {
+      "type": "string",
+      "description": "Project title"
+    },
+    "repository_name": {
+      "type": "string",
+      "description": "GitHub repository name"
+    },
+    "team": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "email", "sNumber"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "sNumber": {
+            "type": "string",
+            "description": "Student registration number"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "supervisors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "email"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
