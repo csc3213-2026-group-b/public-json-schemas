@@ -13,6 +13,11 @@
     "tags"
   ],
   "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional schema reference for editors and validators"
+    },
     "course": {
       "type": "string",
       "description": "Course code (e.g., CSCXXXX)"
