@@ -27,7 +27,7 @@ JSON Schema is written in JSON itself and is commonly used in APIs, configuratio
 
 ## How to Use JSON Schema
 
-Just **put `$schema` at the top of your JSON file** and point it to the raw GitHub URL.
+Just **put `$schema` at the top of your JSON file** and point it to one of the GitHub URLs listed bellow.
 
 ```json
 {
