@@ -31,6 +31,15 @@ Just **put `$schema` at the top of your JSON file** and point it to the raw GitH
 
 ```json
 {
+  "$schema": "https://csc3213-2026-group-b.github.io/public-json-schemas/path/to/the/schema.json",
+  "...": "other fields"
+}
+```
+
+or,
+
+```json
+{
   "$schema": "https://raw.githubusercontent.com/csc3213-2026-group-b/public-json-schemas/main/path/to/the/schema.json",
   "...": "other fields"
 }

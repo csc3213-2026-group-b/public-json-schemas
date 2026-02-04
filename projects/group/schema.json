@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/csc3213-2026-group-b/public-json-schemas/main/projects/group/schema.json",
+  "$id": "https://csc3213-2026-group-b.github.io/public-json-schemas/projects/group/schema.json",
   "title": "Project Metadata",
   "type": "object",
   "required": [
