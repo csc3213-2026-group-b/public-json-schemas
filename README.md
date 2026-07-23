@@ -49,6 +49,14 @@ or,
 
 ---
 
+## Available Schemas
+
+| Data | Schema |
+| --- | --- |
+| SCS project registry item | `projects/schema.json` |
+
+---
+
 ## More to Know
 
 For full specifications, tutorials, and tools, refer to the official documentation:
